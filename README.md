@@ -1,11 +1,17 @@
 # Language Translator — Qwen2-0.5B
 
-A small translation app powered by [Qwen2-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2-0.5B-Instruct). No external API keys required — the model runs entirely on your machine.
+**[▶ Live Demo](https://a01752891.github.io/translation-app/)** — runs entirely in the browser, no API keys needed.
+
+A small translation app powered by [Qwen2-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2-0.5B-Instruct). No external API keys required — the model can run in your browser or locally on your machine.
+
+## Web Demo (GitHub Pages)
+
+Open **https://a01752891.github.io/translation-app/** in any browser. The model downloads automatically (~400 MB on first visit, cached after).
 
 ## Supported Languages
 English, Spanish, Portuguese, French, German
 
-## Setup
+## Local Setup
 
 ```bash
 pip install -r requirements.txt
