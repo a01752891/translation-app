@@ -27,18 +27,8 @@
       box-shadow: 0 25px 50px rgba(0,0,0,0.4);
     }
 
-    h1 {
-      font-size: 1.6rem;
-      font-weight: 700;
-      margin-bottom: 4px;
-      color: #f8fafc;
-    }
-
-    .subtitle {
-      font-size: 0.85rem;
-      color: #64748b;
-      margin-bottom: 28px;
-    }
+    h1 { font-size: 1.6rem; font-weight: 700; margin-bottom: 4px; color: #f8fafc; }
+    .subtitle { font-size: 0.85rem; color: #64748b; margin-bottom: 28px; }
 
     .status-bar {
       background: #0f172a;
@@ -54,143 +44,83 @@
     }
 
     .spinner {
-      width: 16px;
-      height: 16px;
+      width: 16px; height: 16px;
       border: 2px solid #334155;
       border-top-color: #6366f1;
       border-radius: 50%;
       animation: spin 0.8s linear infinite;
       flex-shrink: 0;
     }
-
     @keyframes spin { to { transform: rotate(360deg); } }
 
-    .progress-wrap {
-      flex: 1;
-    }
-
+    .progress-wrap { flex: 1; }
     .progress-track {
-      height: 4px;
-      background: #1e293b;
-      border-radius: 4px;
-      margin-top: 6px;
-      overflow: hidden;
+      height: 4px; background: #1e293b;
+      border-radius: 4px; margin-top: 6px; overflow: hidden;
     }
-
     .progress-fill {
-      height: 100%;
-      background: #6366f1;
-      border-radius: 4px;
-      transition: width 0.3s ease;
-      width: 0%;
+      height: 100%; background: #6366f1;
+      border-radius: 4px; transition: width 0.3s ease; width: 0%;
     }
 
-    .lang-row {
-      display: flex;
-      gap: 12px;
-      margin-bottom: 16px;
-    }
+    .lang-row { display: flex; gap: 12px; margin-bottom: 16px; }
 
     select {
-      flex: 1;
-      background: #0f172a;
-      border: 1px solid #334155;
-      color: #e2e8f0;
-      border-radius: 8px;
-      padding: 10px 14px;
-      font-size: 0.9rem;
-      cursor: pointer;
-      outline: none;
-      transition: border-color 0.2s;
+      flex: 1; background: #0f172a; border: 1px solid #334155;
+      color: #e2e8f0; border-radius: 8px; padding: 10px 14px;
+      font-size: 0.9rem; cursor: pointer; outline: none; transition: border-color 0.2s;
     }
-
     select:focus { border-color: #6366f1; }
 
-    .arrow {
-      display: flex;
-      align-items: center;
-      color: #475569;
-      font-size: 1.2rem;
-    }
+    .arrow { display: flex; align-items: center; color: #475569; font-size: 1.2rem; }
 
     textarea {
-      width: 100%;
-      background: #0f172a;
-      border: 1px solid #334155;
-      color: #e2e8f0;
-      border-radius: 10px;
-      padding: 14px;
-      font-size: 0.95rem;
-      resize: vertical;
-      min-height: 110px;
-      outline: none;
-      transition: border-color 0.2s;
-      font-family: inherit;
-      line-height: 1.5;
+      width: 100%; background: #0f172a; border: 1px solid #334155;
+      color: #e2e8f0; border-radius: 10px; padding: 14px;
+      font-size: 0.95rem; resize: vertical; min-height: 110px;
+      outline: none; transition: border-color 0.2s;
+      font-family: inherit; line-height: 1.5;
     }
-
     textarea:focus { border-color: #6366f1; }
     textarea[readonly] { color: #94a3b8; cursor: default; }
 
     .textarea-label {
-      font-size: 0.75rem;
-      color: #475569;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 6px;
-      margin-top: 16px;
+      font-size: 0.75rem; color: #475569;
+      text-transform: uppercase; letter-spacing: 0.08em;
+      margin-bottom: 6px; margin-top: 16px;
     }
 
     button.translate {
-      width: 100%;
-      margin-top: 16px;
-      padding: 14px;
-      background: #6366f1;
-      color: #fff;
-      border: none;
-      border-radius: 10px;
-      font-size: 1rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background 0.2s, opacity 0.2s;
+      width: 100%; margin-top: 16px; padding: 14px;
+      background: #6366f1; color: #fff; border: none;
+      border-radius: 10px; font-size: 1rem; font-weight: 600;
+      cursor: pointer; transition: background 0.2s, opacity 0.2s;
     }
-
     button.translate:hover:not(:disabled) { background: #4f46e5; }
     button.translate:disabled { opacity: 0.45; cursor: not-allowed; }
 
     .examples-label {
-      font-size: 0.75rem;
-      color: #475569;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-top: 24px;
-      margin-bottom: 8px;
+      font-size: 0.75rem; color: #475569;
+      text-transform: uppercase; letter-spacing: 0.08em;
+      margin-top: 24px; margin-bottom: 8px;
     }
-
-    .examples {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
+    .examples { display: flex; flex-wrap: wrap; gap: 8px; }
     .example-btn {
-      background: #0f172a;
-      border: 1px solid #334155;
-      color: #94a3b8;
-      border-radius: 8px;
-      padding: 8px 14px;
-      font-size: 0.82rem;
-      cursor: pointer;
-      transition: border-color 0.2s, color 0.2s;
+      background: #0f172a; border: 1px solid #334155;
+      color: #94a3b8; border-radius: 8px; padding: 8px 14px;
+      font-size: 0.82rem; cursor: pointer; transition: border-color 0.2s, color 0.2s;
     }
-
     .example-btn:hover { border-color: #6366f1; color: #c7d2fe; }
 
     .ready-dot {
-      width: 8px; height: 8px;
-      background: #22c55e;
-      border-radius: 50%;
-      flex-shrink: 0;
+      width: 8px; height: 8px; background: #22c55e;
+      border-radius: 50%; flex-shrink: 0;
+    }
+
+    .webgpu-warn {
+      background: #451a03; border: 1px solid #92400e;
+      border-radius: 10px; padding: 12px 16px;
+      font-size: 0.83rem; color: #fcd34d; margin-bottom: 20px; display: none;
     }
   </style>
 </head>
@@ -199,10 +129,14 @@
     <h1>Language Translator</h1>
     <p class="subtitle">Powered by Qwen2-0.5B &mdash; runs entirely in your browser, no API keys needed</p>
 
+    <div class="webgpu-warn" id="webgpuWarn">
+      ⚠ Your browser does not support WebGPU. Please use Chrome 113+ or Edge 113+.
+    </div>
+
     <div class="status-bar" id="statusBar">
       <div class="spinner" id="spinner"></div>
       <div class="progress-wrap">
-        <span id="statusText">Loading model, please wait…</span>
+        <span id="statusText">Initializing…</span>
         <div class="progress-track">
           <div class="progress-fill" id="progressFill"></div>
         </div>
@@ -244,81 +178,86 @@
   </div>
 
   <script type="module">
-    import { pipeline } from 'https://cdn.jsdelivr.net/npm/@huggingface/transformers@3';
+    import * as webllm from "https://esm.run/@mlc-ai/web-llm";
 
-    const MODEL = 'onnx-community/Qwen2-0.5B-Instruct';
+    const MODEL_ID = "Qwen2-0.5B-Instruct-q4f16_1-MLC";
 
-    const statusText  = document.getElementById('statusText');
-    const progressFill = document.getElementById('progressFill');
-    const spinner     = document.getElementById('spinner');
-    const translateBtn = document.getElementById('translateBtn');
-    const statusBar   = document.getElementById('statusBar');
+    const statusText   = document.getElementById("statusText");
+    const progressFill = document.getElementById("progressFill");
+    const spinner      = document.getElementById("spinner");
+    const translateBtn = document.getElementById("translateBtn");
+    const statusBar    = document.getElementById("statusBar");
 
-    let generator = null;
+    let engine = null;
 
     function setReady() {
-      spinner.style.display = 'none';
+      spinner.style.display = "none";
       statusBar.innerHTML = '<div class="ready-dot"></div><span>Model ready — translate away!</span>';
       translateBtn.disabled = false;
     }
 
     function setError(msg) {
-      spinner.style.display = 'none';
-      statusText.textContent = '⚠ ' + msg;
+      spinner.style.display = "none";
+      statusText.textContent = "⚠ " + msg;
     }
 
     async function loadModel() {
+      if (!navigator.gpu) {
+        document.getElementById("webgpuWarn").style.display = "block";
+        setError("WebGPU not supported in this browser.");
+        return;
+      }
+
       try {
-        generator = await pipeline('text-generation', MODEL, {
-          dtype: 'q4',
-          progress_callback: ({ status, progress, file }) => {
-            if (status === 'progress' && progress != null) {
-              const pct = Math.round(progress);
-              progressFill.style.width = pct + '%';
-              statusText.textContent = `Downloading model… ${pct}% (${file ?? ''})`;
-            }
+        engine = await webllm.CreateMLCEngine(MODEL_ID, {
+          initProgressCallback: ({ progress, text }) => {
+            const pct = Math.round((progress ?? 0) * 100);
+            progressFill.style.width = pct + "%";
+            statusText.textContent = text ?? `Loading… ${pct}%`;
           },
         });
         setReady();
       } catch (e) {
-        setError('Failed to load model: ' + e.message);
+        setError("Failed to load model: " + e.message);
       }
     }
 
     async function translate() {
-      const text = document.getElementById('inputText').value.trim();
-      if (!text || !generator) return;
+      const text = document.getElementById("inputText").value.trim();
+      if (!text || !engine) return;
 
-      const src = document.getElementById('srcLang').value;
-      const tgt = document.getElementById('tgtLang').value;
-      const output = document.getElementById('outputText');
+      const src = document.getElementById("srcLang").value;
+      const tgt = document.getElementById("tgtLang").value;
+      const output = document.getElementById("outputText");
 
       translateBtn.disabled = true;
-      translateBtn.textContent = 'Translating…';
-      output.value = '';
+      translateBtn.textContent = "Translating…";
+      output.value = "";
 
       try {
-        const messages = [
-          {
-            role: 'user',
-            content: `Translate the following ${src} text to ${tgt}. Reply with ONLY the translation, no explanations.\n\nText: ${text}`,
-          },
-        ];
-
-        const result = await generator(messages, { max_new_tokens: 150, do_sample: false });
-        output.value = result[0].generated_text.at(-1).content.trim();
+        const reply = await engine.chat.completions.create({
+          messages: [
+            {
+              role: "user",
+              content: `Translate the following ${src} text to ${tgt}. Reply with ONLY the translation, no explanations.\n\nText: ${text}`,
+            },
+          ],
+          temperature: 0,
+          max_tokens: 150,
+        });
+        output.value = reply.choices[0].message.content.trim();
       } catch (e) {
-        output.value = 'Error: ' + e.message;
+        output.value = "Error: " + e.message;
       } finally {
         translateBtn.disabled = false;
-        translateBtn.textContent = 'Translate';
+        translateBtn.textContent = "Translate";
       }
     }
 
-    document.getElementById('translateBtn').addEventListener('click', translate);
+    document.getElementById("translateBtn").addEventListener("click", translate);
 
-    window.setExample = function(text) {
-      document.getElementById('inputText').value = text;
+    window.setExample = (text) => {
+      document.getElementById("inputText").value = text;
     };
 
     loadModel();
